@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Tools cache
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Environment
+.env
+
+# Data
+data/
+*.csv
+*.parquet
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Notebook outputs
+*.html
+
+# OS
+.DS_Store
+Thumbs.db
