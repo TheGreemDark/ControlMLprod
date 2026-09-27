@@ -1,13 +1,41 @@
 [project]
 name = "controlmlprod"
 version = "0.1.0"
-description = "Add your description here"
+description = "Project for the AI Product Management course"
 readme = "README.md"
-authors = [
-    { name = 'LAPTOP-I8C4HI8P\Александр', email = 'LAPTOP-I8C4HI8P\Александр' }
-]
-requires-python = ">=3.13"
+requires-python = ">=3.13,<3.14"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "mypy==2.3.1",
+    "pre-commit==4.6.2",
+    "ruff==0.16.9",
+]
+
+[tool.ruff]
+line-length = 99
+
+[tool.ruff.lint]
+extend-select = [
+    "B",
+    "UP",
+    "I",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+exclude = [
+    "^\\.venv/",
+    "^\\.git/",
+    "^__pycache__/",
+    "^\\.mypy_cache/",
+    "^\\.ruff_cache/",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
