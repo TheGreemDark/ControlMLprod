@@ -9,14 +9,25 @@
 - uv
 - Git
 - Unix / macOS / Linux / WSL
+- make
 
 ## Установка и запуск
 
-Клонировать репозиторий:
+### Клонирование репозитория:
 
 ```bash
 git clone https://github.com/TheGreemDark/ControlMLprod.git
 ```
 ```bash
 cd ControlMLprod
+```
+
+### Установка
+```bash
+make setup
+```
+
+### Проверка
+```bash
+make check
 ```
