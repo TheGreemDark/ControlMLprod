@@ -1,0 +1,18 @@
+experiment_name: cifar10-simple-cnn
+run_name: cnn-lr0.001-bs128-seed42
+seed: 42
+
+data:
+  s3_path: processed/cifar10/v1
+  max_train_samples: 2048
+
+model:
+  type: simple_cnn
+  params:
+    channels: [32, 64]
+
+train:
+  epochs: 3
+  batch_size: 128
+  lr: 0.001
+  num_workers: 0

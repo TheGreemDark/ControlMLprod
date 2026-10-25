@@ -1,0 +1,33 @@
+{
+  "os":  "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python":  "CPython 3.13.15",
+  "startedAt":  "2026-10-18T11:13:34.312393Z",
+  "args":  [
+    "--config",
+    "configs/simple_cnn.yaml"
+  ],
+  "program":  "-m controlmlprod.experiments.train",
+  "git":  {
+    "remote":  "https://github.com/TheGreemDark/ControlMLprod.git",
+    "commit":  "f5fbf5cea0be69a140e82e367848be4eed1c643c"
+  },
+  "email":  "smiralex.canserg.2333@yandex.ru",
+  "root":  "/home/lokenai/projects/ControlMLprod",
+  "host":  "LAPTOP-I8C4HI8P",
+  "executable":  "/home/lokenai/projects/ControlMLprod/.venv/bin/python",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "1081101176832",
+      "used":  "6313828352"
+    }
+  },
+  "memory":  {
+    "total":  "8184344576"
+  },
+  "cpu":  {
+    "model":  "12th Gen Intel(R) Core(TM) i5-12450H"
+  },
+  "writerId":  "01a14eb7-8c6c-74c1-aced-e5b40e50427a"
+}
