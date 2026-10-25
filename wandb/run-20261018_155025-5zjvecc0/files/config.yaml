@@ -1,0 +1,107 @@
+_wandb:
+    value:
+        cli_version: 0.31.0
+        e:
+            01a14ea2-5b0f-77d6-b9f7-b04a68e56ab2:
+                args:
+                    - --config
+                    - configs/baseline.yaml
+                cpu:
+                    model: 12th Gen Intel(R) Core(TM) i5-12450H
+                cpu_count: 6
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "6311665664"
+                email: smiralex.canserg.2333@yandex.ru
+                executable: /home/lokenai/projects/ControlMLprod/.venv/bin/python
+                git:
+                    commit: f5fbf5cea0be69a140e82e367848be4eed1c643c
+                    remote: https://github.com/TheGreemDark/ControlMLprod.git
+                host: LAPTOP-I8C4HI8P
+                memory:
+                    total: "8184344576"
+                os: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+                program: -m controlmlprod.experiments.train
+                python: CPython 3.13.15
+                root: /home/lokenai/projects/ControlMLprod
+                startedAt: "2026-10-18T10:50:25.419901Z"
+                writerId: 01a14ea2-5b0f-77d6-b9f7-b04a68e56ab2
+        m: []
+        python_version: 3.13.15
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+                - 62
+                - 78
+            "4": 3.13.15
+            "5": 0.31.0
+            "12": 0.31.0
+            "13": linux-x86_64
+        visualize:
+            val/confusion_matrix:
+                panel_config:
+                    fieldSettings:
+                        Actual: Actual
+                        Predicted: Predicted
+                        nPredictions: nPredictions
+                    panelDefId: wandb/confusion_matrix/v1
+                    stringSettings:
+                        title: Validation confusion matrix — best checkpoint
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: val/confusion_matrix_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+data:
+    value:
+        max_train_samples: 2048
+        s3_path: processed/cifar10/v1
+dataset_s3_path:
+    value: processed/cifar10/v1
+experiment_name:
+    value: cifar10-baseline
+git_commit:
+    value: f5fbf5cea0be69a140e82e367848be4eed1c643c
+model:
+    value:
+        type: linear
+run_name:
+    value: linear-seed42
+seed:
+    value: 42
+train:
+    value:
+        batch_size: 128
+        epochs: 3
+        lr: 0.001
+        num_workers: 0

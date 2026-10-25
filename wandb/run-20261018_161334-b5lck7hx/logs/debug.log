@@ -1,0 +1,25 @@
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_setup.py:_flush():81] Current SDK version is 0.31.0
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_setup.py:_flush():81] Configure stats pid to 11815
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_init.py:setup_run_log_directory():740] Logging user logs to /home/lokenai/projects/ControlMLprod/wandb/run-20261018_161334-b5lck7hx/logs/debug.log
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_init.py:setup_run_log_directory():741] Logging internal logs to /home/lokenai/projects/ControlMLprod/wandb/run-20261018_161334-b5lck7hx/logs/debug-internal.log
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_init.py:init():784] calling init triggers
+2026-10-18 16:13:34,314 INFO    MainThread:11815 [wandb_init.py:init():789] wandb.init called with sweep_config: {}
+config: {'experiment_name': 'cifar10-simple-cnn', 'run_name': 'cnn-lr0.001-bs128-seed42', 'seed': 42, 'data': {'s3_path': 'processed/cifar10/v1', 'max_train_samples': 2048}, 'model': {'type': 'simple_cnn', 'params': {'channels': [32, 64]}}, 'train': {'epochs': 3, 'batch_size': 128, 'lr': 0.001, 'num_workers': 0}, 'git_commit': 'f5fbf5cea0be69a140e82e367848be4eed1c643c', 'dataset_s3_path': 'processed/cifar10/v1', '_wandb': {}}
+2026-10-18 16:13:34,315 INFO    MainThread:11815 [wandb_init.py:init():832] starting backend
+2026-10-18 16:13:34,315 INFO    MainThread:11815 [wandb_init.py:init():847] sending inform_init request
+2026-10-18 16:13:34,320 INFO    MainThread:11815 [wandb_init.py:init():852] backend started and connected
+2026-10-18 16:13:34,321 INFO    MainThread:11815 [wandb_init.py:init():922] updated telemetry
+2026-10-18 16:13:34,328 INFO    MainThread:11815 [wandb_init.py:init():940] communicating run to backend with 90.0 second timeout
+2026-10-18 16:13:35,201 INFO    MainThread:11815 [wandb_init.py:init():977] starting run threads in backend
+2026-10-18 16:13:35,253 INFO    MainThread:11815 [wandb_run.py:_console_start():2528] atexit reg
+2026-10-18 16:13:35,253 INFO    MainThread:11815 [wandb_run.py:_redirect():2378] redirect: wrap_raw
+2026-10-18 16:13:35,253 INFO    MainThread:11815 [wandb_run.py:_redirect():2447] Wrapping output streams.
+2026-10-18 16:13:35,253 INFO    MainThread:11815 [wandb_run.py:_redirect():2470] Redirects installed.
+2026-10-18 16:13:35,257 INFO    MainThread:11815 [wandb_init.py:init():1015] run started, returning control to user process
+2026-10-18 16:13:55,572 INFO    MainThread:11815 [wandb_run.py:_config_callback():1280] config_cb ('_wandb', 'visualize', 'val/confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Validation confusion matrix — best checkpoint'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'val/confusion_matrix_table'}], 'fields': []}]}]}}} None
+2026-10-18 16:13:56,655 INFO    MainThread:11815 [wandb_run.py:_finish():2300] finishing run smiralex-canserg-2333-ural-federal-university/ControlMLprod/b5lck7hx
+2026-10-18 16:13:56,655 INFO    MainThread:11815 [wandb_run.py:_atexit_cleanup():2495] got exitcode: 0
+2026-10-18 16:13:56,655 INFO    MainThread:11815 [wandb_run.py:_restore():2477] restore
+2026-10-18 16:13:56,655 INFO    MainThread:11815 [wandb_run.py:_restore():2483] restore done
+2026-10-18 16:14:00,002 INFO    MainThread:11815 [wandb_run.py:_footer_sync_info():3908] logging synced files

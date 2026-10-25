@@ -20,3 +20,17 @@ ingest:
 
 data:
 	uv run python -m controlmlprod.data.pipeline
+
+.PHONY: infra-up experiments infra-down
+
+CONFIG ?= configs/grid.yaml
+
+infra-up:
+	docker compose --profile experiments build train
+	docker compose up -d --wait
+
+experiments: infra-up
+	uv run --locked python -m controlmlprod.experiments.run_grid --config "$(CONFIG)"
+
+infra-down:
+	docker compose --profile experiments down

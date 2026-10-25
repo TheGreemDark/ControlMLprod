@@ -1,0 +1,6 @@
+experiment_name: cifar10-cnn-grid
+base: configs/simple_cnn.yaml
+
+grid:
+  train.lr: [0.0003, 0.001, 0.003]
+  train.batch_size: [64, 128]

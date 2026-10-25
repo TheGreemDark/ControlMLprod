@@ -1,0 +1,17 @@
+experiment_name: cifar10-baseline
+run_name: linear-seed42
+seed: 42
+
+data:
+  s3_path: processed/cifar10/v1
+  max_train_samples: 2048
+
+model:
+  type: linear
+  params: {}
+
+train:
+  epochs: 3
+  batch_size: 128
+  lr: 0.001
+  num_workers: 0
